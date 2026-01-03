@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pojok Baca Digital - Perpustakaan Istiqlal</title>
-    
+    <title>Daftar Koleksi - Pojok Baca Digital</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="koleksi.css">
 </head>
 <body>
 
@@ -18,43 +17,38 @@
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="index.html">Beranda</a></li>
                 <li><a href="informasi.html">Informasi</a></li>
-                <li><a href="koleksi.html">Daftar Koleksi</a></li>
+                <li><a href="koleksi.html" class="active">Daftar Koleksi</a></li>
                 <li><a href="tentang.html">Tentang Kami</a></li>
-                <li><a href="masuk.html">Masuk Perpustakaan</a></li>
+                 <li><a href="masuk.html">Masuk Perpustakaan</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <p class="subtitle">Selamat Datang di Literasi Digital</p>
-            <h2>Membuka Jendela Dunia <br> Melalui Pengetahuan</h2>
-            
-            <form class="search-box">
-                <input type="text" placeholder="Cari buku, artikel, atau jurnal ilmiah...">
-                <button type="submit">Cari Koleksi</button>
-            </form>
-        </div>
-    </section>
-
     <main class="container">
         <div class="section-header">
-            <h3 class="section-title">Koleksi Unggulan</h3>
-            <p>Pilihan literasi terbaik untuk memperdalam wawasan Anda.</p>
+            <h2 class="section-title">Semua Koleksi</h2>
+            <p>Tersedia 20 koleksi pilihan yang terdiri dari Artikel Jurnal dan Buku Digital.</p>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active">Semua</button>
+            <button class="filter-btn">Buku Digital</button>
+            <button class="filter-btn">Artikel Jurnal</button>
         </div>
 
         <div class="grid-container">
+            
             <div class="card">
                 <div class="card-img">
                     <img src="https://images.unsplash.com/photo-1544640808-32ca72ac7f37?auto=format&fit=crop&w=400&q=80" alt="Buku">
-                    <span class="tag">Buku Digital</span>
+                    <span class="tag">Buku</span>
                 </div>
                 <div class="card-body">
                     <h3>Sejarah Peradaban Islam</h3>
-                    <p class="author">Oleh: Ahmad Mansur</p>
-                    <p class="status">Tersedia untuk dipinjam</p>
+                    <p class="author">Ahmad Mansur</p>
+                    <p class="status">Tersedia</p>
                 </div>
             </div>
 
@@ -64,8 +58,8 @@
                     <span class="tag">Artikel</span>
                 </div>
                 <div class="card-body">
-                    <h3>Arsitektur Modern Istiqlal</h3>
-                    <p class="author">Oleh: Tim Literasi</p>
+                    <h3>Moderasi Beragama</h3>
+                    <p class="author">Dr. Lukman Hakim</p>
                     <p class="status">Baca Online</p>
                 </div>
             </div>
@@ -76,12 +70,13 @@
                     <span class="tag">Jurnal</span>
                 </div>
                 <div class="card-body">
-                    <h3>Pendidikan Karakter Digital</h3>
-                    <p class="author">Oleh: Dr. Sulaiman</p>
+                    <h3>Pendidikan Karakter</h3>
+                    <p class="author">Dr. Sulaiman</p>
                     <p class="status">Tersedia</p>
                 </div>
             </div>
-        </div>
+
+            </div>
     </main>
 
     <footer>

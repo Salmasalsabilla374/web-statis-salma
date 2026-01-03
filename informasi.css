@@ -1,0 +1,110 @@
+/* --- 1. VARIABEL & DASAR --- */
+:root {
+    --istiqlal-green: #1a4d2e;
+    --istiqlal-gold: #af9164;
+    --istiqlal-marble: #f4f4f4;
+    --white: #ffffff;
+    --text-dark: #333;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--istiqlal-marble);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* --- 2. HEADER --- */
+.main-header {
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 4px solid var(--istiqlal-gold);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--istiqlal-green); }
+.logo span { color: var(--istiqlal-gold); }
+
+.main-nav ul { display: flex; list-style: none; gap: 20px; align-items: center; }
+.main-nav a { text-decoration: none; color: var(--text-dark); font-weight: 500; font-size: 0.95rem; }
+.main-nav a.active { color: var(--istiqlal-green); border-bottom: 2px solid var(--istiqlal-gold); }
+
+.btn-gold {
+    background-color: var(--istiqlal-green);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-gold:hover { background-color: var(--istiqlal-gold); }
+
+/* --- 3. KONTEN & KARTU --- */
+.container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+
+.section-header { text-align: center; margin-bottom: 40px; }
+.section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--istiqlal-green); }
+
+.info-card {
+    background: var(--white);
+    padding: 35px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 8px solid var(--istiqlal-gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.info-card h3 { color: var(--istiqlal-green); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+
+/* Tabel Jam */
+.info-table { width: 100%; border-collapse: collapse; }
+.info-table td { padding: 12px 0; border-bottom: 1px solid #eee; }
+.info-table tr:last-child td { border-bottom: none; }
+.holiday { color: #e74c3c; font-weight: bold; }
+
+/* List Berita */
+.news-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+.news-date {
+    background: var(--istiqlal-green);
+    color: white;
+    min-width: 65px;
+    height: 65px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.news-date .day { font-size: 1.3rem; }
+.news-date .month { font-size: 0.7rem; text-transform: uppercase; }
+
+.news-content h4 a { color: var(--istiqlal-green); text-decoration: none; font-weight: 600; }
+.news-content p { font-size: 0.9rem; color: #666; margin-top: 5px; }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--istiqlal-green);
+    color: white;
+    margin-top: 50px;
+    border-top: 4px solid var(--istiqlal-gold);
+}

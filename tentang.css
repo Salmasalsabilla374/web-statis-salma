@@ -1,0 +1,125 @@
+/* --- VARIABEL & RESET --- */
+:root {
+    --istiqlal-green: #1a4d2e;
+    --istiqlal-gold: #af9164;
+    --istiqlal-marble: #f4f4f4;
+    --white: #ffffff;
+    --text-dark: #333;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--istiqlal-marble);
+    color: var(--text-dark);
+}
+
+/* --- HEADER (Sama dengan halaman Informasi) --- */
+.main-header {
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 4px solid var(--istiqlal-gold);
+}
+
+.logo h1 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--istiqlal-green); }
+.logo span { color: var(--istiqlal-gold); }
+
+.main-nav ul { display: flex; list-style: none; gap: 20px; }
+.main-nav a { text-decoration: none; color: var(--text-dark); font-weight: 500; }
+.main-nav a.active { color: var(--istiqlal-green); border-bottom: 2px solid var(--istiqlal-gold); }
+
+.btn-gold {
+    background-color: var(--istiqlal-green);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* --- LAYOUT TENTANG KAMI --- */
+.container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+
+.about-card {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Membagi kolom teks dan gambar */
+    gap: 50px;
+    align-items: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: var(--istiqlal-green);
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--istiqlal-gold);
+    margin-bottom: 20px;
+}
+
+.divider {
+    width: 60px;
+    border: 2px solid var(--istiqlal-gold);
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #555;
+    text-align: justify;
+}
+
+.mission h4 { color: var(--istiqlal-green); margin-bottom: 10px; }
+.mission ul { padding-left: 20px; color: #555; }
+
+/* Styling Gambar */
+.about-image { 
+    position: relative;
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto; /* Atur tinggi agar seragam */
+    min-height: 300px;
+    display: block;
+    border-radius: 10px;
+    z-index: 5;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Efek Kotak Emas di Belakang Gambar */
+.image-frame {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #af9164;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--istiqlal-green);
+    color: white;
+    margin-top: 50px;
+    border-top: 4px solid var(--istiqlal-gold);
+}
